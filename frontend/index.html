@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NassauTickets - Protótipo Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NassauTickets - Laboratório de Análises Clínicas</h1>
+    </header>
+
+    <main class="container">
+        <!-- Totem (Agente Cliente) -->
+        <section class="card" id="totem">
+            <h2>Totem de Emissão (Cliente)</h2>
+            <p>Selecione o tipo de atendimento:</p>
+            <div class="botoes-totem">
+                <button class="btn btn-prioritario">Senha Prioritária (SP)</button>
+                <button class="btn btn-exames">Retirada de Exames (SE)</button>
+                <button class="btn btn-geral">Senha Geral (SG)</button>
+            </div>
+        </section>
+
+        <!-- Painel de Chamadas (Agente Cliente / Sala de Espera) -->
+        <section class="card" id="painel">
+            <h2>Painel de Chamadas</h2>
+            <div class="senha-atual">
+                <h3>261002-SP001</h3>
+                <p>Guichê 03</p>
+            </div>
+            <div class="ultimas-senhas">
+                <p>Últimas chamadas:</p>
+                <ul>
+                    <li>261002-SG004 - Guichê 01</li>
+                    <li>261002-SE002 - Guichê 02</li>
+                    <li>261002-SP005 - Guichê 04</li>
+                    <li>261002-SG003 - Guichê 01</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Controle do Guichê (Agente Atendente) -->
+        <section class="card" id="guiche">
+            <h2>Controle do Guichê (Atendente)</h2>
+            <div class="status-guiche">
+                <p>Status: <strong>Livre</strong></p>
+            </div>
+            <div class="botoes-guiche">
+                <button class="btn">Chamar Próxima Senha</button>
+                <button class="btn btn-iniciar">Iniciar Atendimento</button>
+                <button class="btn btn-finalizar">Finalizar Atendimento</button>
+                <button class="btn btn-alerta">Chamar Novamente</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

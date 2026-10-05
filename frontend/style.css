@@ -1,0 +1,30 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f4f7f6; color: #333; }
+header { background-color: #004b87; color: white; padding: 20px; text-align: center; }
+.container { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; justify-content: center; }
+
+.card { 
+    background: white; border-radius: 8px; padding: 20px; 
+    width: 100%; max-width: 350px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+.card h2 { font-size: 1.2rem; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px; color: #004b87; }
+
+.btn { 
+    display: block; width: 100%; padding: 12px; margin-bottom: 10px; 
+    border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; 
+    background-color: #007bff; color: white; transition: opacity 0.3s; 
+}
+.btn:hover { opacity: 0.8; }
+
+.btn-prioritario { background-color: #dc3545; }
+.btn-exames { background-color: #28a745; }
+.btn-geral { background-color: #6c757d; }
+.btn-iniciar { background-color: #28a745; }
+.btn-finalizar { background-color: #dc3545; }
+.btn-alerta { background-color: #ffc107; color: black; }
+
+.senha-atual { text-align: center; background: #e9ecef; padding: 20px; border-radius: 5px; margin-bottom: 15px; }
+.senha-atual h3 { font-size: 2.5rem; color: #dc3545; margin-bottom: 5px; }
+
+.ultimas-senhas ul { list-style: none; margin-top: 10px; }
+.ultimas-senhas li { background: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd; font-size: 0.9rem; }
